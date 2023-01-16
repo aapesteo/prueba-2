@@ -1,0 +1,55 @@
+.respuestas{
+	display:grid
+}
+
+.respuestas a {
+	transition:.3s;
+	margin:2%;
+	padding:5%;
+	border: 2px solid black;
+	color:black!important;
+}
+
+.respuestas a:hover {
+	background:grey;
+	border: 2px solid grey;
+	color:white!important;
+}
+
+.cuadro1{
+	grid-column:1;
+	grid-row:1;
+/*	background:red;
+	color:white!important; */
+}
+.cuadro2{
+	grid-column:2;
+	grid-row:1;
+/*	background:yellow;
+	color:black!important; */
+}
+
+.cuadro3{
+	grid-column:1;
+	grid-row:2;
+/*	background:blue;
+	color:white!important; */
+}
+.cuadro4{
+	grid-column:2;
+	grid-row:2;
+/*	background:green;
+	color:white!important; */
+}
+.boton{
+	transition: all ease .3s!important;
+	padding:2%;
+	border: 2px solid white;
+	color:white!important;
+}
+
+.boton:hover{
+	background:grey;
+	border: 2px solid ligthgrey;
+	color:white!important;
+}

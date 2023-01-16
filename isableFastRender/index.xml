@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AA portfolio</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on AA portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 13 Nov 2018 09:00:10 +0100</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Ivie</title>
+      <link>http://localhost:1313/portfolio/ivie/</link>
+      <pubDate>Tue, 13 Nov 2018 09:00:10 +0100</pubDate>
+      
+      <guid>http://localhost:1313/portfolio/ivie/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nosturi</title>
+      <link>http://localhost:1313/portfolio/nosturi/</link>
+      <pubDate>Tue, 13 Nov 2018 08:49:21 +0100</pubDate>
+      
+      <guid>http://localhost:1313/portfolio/nosturi/</guid>
+      <description>#Esta es la página de Nosturi </description>
+    </item>
+    
+    <item>
+      <title>Cv</title>
+      <link>http://localhost:1313/cv/</link>
+      <pubDate>Tue, 13 Nov 2018 08:44:44 +0100</pubDate>
+      
+      <guid>http://localhost:1313/cv/</guid>
+      <description>Este es el CV</description>
+    </item>
+    
+  </channel>
+</rss>

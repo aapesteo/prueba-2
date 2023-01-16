@@ -1,0 +1,81 @@
+<script type="text/javascript" src="/en_EN.js"></script>
+<script type="text/javascript">
+  // Menu
+  function menu() {
+    var menu = document.querySelector(".topMenu");
+    if (menu.className === "col-12 topMenu") {
+      menu.className += " responsive";
+    } else {
+      menu.className = "col-12 topMenu";
+    }
+  }
+
+
+  //  Slider
+  var x = document.getElementsByClassName("mySlides");
+  if (x.length > 0){
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+        showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+        var i;
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length} ;
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        x[slideIndex-1].style.display = "block";
+    }
+  }
+
+
+  // traducción
+  var language = document.querySelector("#language");
+  var y = localStorage.getItem("idioma");
+
+
+  language.onclick = function cambioDeIdioma(){
+    if(y == null || y == "castellano"){
+      localStorage.setItem("idioma","ingles");
+      location.reload();
+    }else if (y == "ingles"){
+      localStorage.setItem("idioma","castellano");
+      location.reload();
+    }
+  }
+
+  var all = [
+    document.getElementsByTagName("h1"),
+    document.getElementsByTagName("h2"),
+    document.getElementsByTagName("a"),
+    document.getElementsByTagName("p"),
+    document.getElementsByTagName("button"),
+    document.getElementsByTagName("label"),
+    document.getElementsByTagName("strong"),
+    document.getElementsByTagName("span"),
+    document.getElementsByTagName("li")
+  ];
+
+  var total = 0;
+
+    window.onload = function idioma(){
+    if(y == null || y == "castellano"){
+    }else if (y == "ingles"){
+      language.innerHTML = "Spanish";
+      for (var i = 0; all.length > i; i++){
+        for (var k = 0; all[i].length > k; k++){
+          for (var j = 0; ingles.length > j; j++){
+            if (all[i][k].innerHTML == ingles[j].castellano){
+              all[i][k].innerHTML = ingles[j].ingles
+            }
+            }
+          }
+        }
+      }
+    }
+</script>
+

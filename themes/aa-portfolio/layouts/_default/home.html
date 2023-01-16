@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Site.Title }}</title>
+      {{ partial "styles" . }}
+  </head>
+  <body class="home">
+      <!-- {{ partial "menu" . }}
+
+      <div class="main">
+        <h2>Bienvenido a mi portfolio, mi nombre es</h2>
+        <h1 class="nombre">Ana Amelia Patiño Esteo</h1>
+      </div>
+
+        <nav class="col-12 footerhome">
+          <a href="/politica-de-privacidad">Política de privacidad</a>
+          <a href="/aviso-legal">Aviso legal</a>
+        </nav> -->
+
+        <div class="col-6 home">
+          <img src="/logo_negro.svg" width="50%">
+        </div>
+        <div class="col-6 home">
+          <div class="menuhome">
+            <div><a href="/" class="linkmenuhome linkhome">Home</a></div>
+            <div><a href="/portfolio" class="linkmenuhome linkportfolio">Portfolio</a></div>
+			<div><a href="/blog" class="linkmenuhome linkblog">Blog</a></div>
+            <div><a href="/cv" class="linkmenuhome linkcv">CV</a></div>
+            <div><a href="/contacto" class="linkmenuhome linkcontact">Contacto</a></div>
+          </div>
+        </div>
+
+      {{ partial "javascript" . }}
+
+  </body>
+</html>

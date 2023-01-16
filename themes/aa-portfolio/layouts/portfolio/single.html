@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Site.Title }}</title>
+      {{ partial "styles" . }}
+  </head>
+  <body class="single">
+	<div>
+      {{ partial "menu" . }}
+
+      <div class="tipos">
+        <a href="/tipotrabajo/imagen-corporativa">Imagen corporativa</a> |
+        <a href="/tipotrabajo/renders">Renders</a> |
+        <a href="/tipotrabajo/carteleria">Cartelería</a> |
+        <a href="/tipotrabajo/ilustracion">Ilustración</a> |
+        <a href="/tipotrabajo/juegos">Juegos</a> |
+        <a href="/tipotrabajo/theming">Theming</a> |
+        <a href="/tipotrabajo/caligrafia">Caligrafía</a>
+      </div>
+    </div>
+	
+      <div class="main">
+        <h1> {{ .Title }}</h1>
+
+	<p class="center"><strong>Tipo de proyecto: </strong><span><a href="/tipotrabajo/{{ .Params.tipotrabajo }}">{{ .Params.tipo }}</a></span> | <strong>Año: </strong><span>{{ .Date.Year }}</span></p>
+	<div>
+           {{ .Content }}
+      	</div>
+      </div>
+      <nav class="col-12 footer">
+        <a href="/politica-de-privacidad">Politica de privacidad</a>
+        <a href="/aviso-legal">Aviso legal</a>
+      </nav>
+
+      {{ partial "javascript" . }}
+  </body>
+</html>

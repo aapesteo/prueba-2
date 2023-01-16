@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Site.Title }}</title>
+      {{ partial "styles" . }}
+  </head>
+  <body class="single">
+      {{ partial "menu" . }}
+
+      <div class="main">
+
+    <h1> {{ .Title }}</h1>
+
+      {{ .Content }}
+    </div>
+
+
+        <nav class="col-12 footer">
+          <a href="/politica-de-privacidad">Política de privacidad</a>
+          <a href="/aviso-legal">Aviso legal</a>
+        </nav>
+
+      {{ partial "javascript" . }}
+  </body>
+</html>

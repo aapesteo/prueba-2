@@ -1,17 +1,30 @@
-# example netlify.toml
 [build]
-  command = "hugo"
-  functions = "netlify/functions"
-  publish = "public"
+publish = "public"
+command = "hugo"
 
-[build.environment]
-  HUGO_VERSION = "0.101.0"
+[context.production.environment]
+HUGO_VERSION = "0.51"
+HUGO_ENV = "production"
+HUGO_ENABLEGITINFO = "true"
 
-[[plugins]]
-  package = "netlify-plugin-cypress"
+[context.split1]
+command = "hugo --enableGitInfo"
 
-  [plugins.inputs.postBuild]
-    enable = true
+[context.split1.environment]
+HUGO_VERSION = "0.51"
+HUGO_ENV = "production"
 
-  [plugins.inputs]
-    enable = false
+[context.deploy-preview]
+command = "hugo --buildFuture -b $DEPLOY_PRIME_URL"
+
+[context.deploy-preview.environment]
+HUGO_VERSION = "0.51"
+
+[context.branch-deploy]
+command = "hugo -b $DEPLOY_PRIME_URL"
+
+[context.branch-deploy.environment]
+HUGO_VERSION = "0.51"
+
+[context.next.environment]
+HUGO_ENABLEGITINFO = "true"

@@ -1,0 +1,10 @@
+name = "AA Portfolio Theme"
+license = "MIT"
+description = "A theme for a Portfolio"
+tags = []
+features = []
+min_version = "0.25.1"
+
+[author]
+  name = "Ana Amelia"
+  homepage = "http://www.lucycons3.eu"
